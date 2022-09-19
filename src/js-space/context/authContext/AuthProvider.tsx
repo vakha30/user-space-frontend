@@ -42,7 +42,7 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  const registerUser = async (user: Omit<UserType, "id">) => {
+  const registerUser = async (user) => {
     const response = await fetch("/api/auth/register/", {
       method: "POST",
       headers: {

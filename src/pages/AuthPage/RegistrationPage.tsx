@@ -1,9 +1,8 @@
 import { useAuth } from "js-space/context/authContext";
 import { FC, useState } from "react";
-import { UserType } from "js-space/types";
 
 const RegistrationPage: FC = () => {
-  const [user, setUser] = useState<Omit<UserType, "id">>({
+  const [user, setUser] = useState({
     username: "",
     password: "",
     password2: "",
